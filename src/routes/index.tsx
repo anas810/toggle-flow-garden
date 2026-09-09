@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { BankCanvas } from "@/components/BankCanvas";
 import { IssuanceRate } from "@/components/IssuanceRate";
+import { FeeRouting } from "@/components/FeeRouting";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -141,6 +142,7 @@ function Index() {
           <div className="relative">
             <BankCanvas state={state} />
             <IssuanceRate state={state} />
+            <FeeRouting state={state} />
             <span
               key={state}
               className="label animate-fade-in absolute left-1/2 -translate-x-1/2 text-sm tracking-widest uppercase"
