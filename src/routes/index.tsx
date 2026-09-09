@@ -98,45 +98,6 @@ function Index() {
           </p>
         </section>
 
-        {/* Flow map */}
-        <section className="mt-16 sm:mt-24">
-          <span className="label text-muted-foreground">The flow</span>
-          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {[
-              { t: "Entries", d: "charters, entries, volume", k: "IN" },
-              { t: "Hooked V4 Pool", d: "all volume passes through", k: "" },
-              { t: "Exits", d: "withdrawals and exits", k: "OUT" },
-            ].map((n) => (
-              <div key={n.t} className="border border-hairline bg-paper">
-                <div className="bg-ink px-4 py-3 text-center">
-                  <span className="label text-background">{n.t}</span>
-                </div>
-                <p className="px-4 py-5 text-center text-sm text-muted-foreground">
-                  {n.d}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-6 flex flex-col items-center">
-            <div className="h-10 w-px bg-hairline" />
-            <span className="label py-2 text-muted-foreground">Net flow</span>
-            <div className="h-10 w-px bg-hairline" />
-            <div
-              className="mt-3 flex h-32 w-32 rotate-45 items-center justify-center border border-hairline bg-sand/60"
-              aria-hidden="true"
-            />
-            <span className="-mt-[4.7rem] label z-10 text-center">
-              The Central
-              <br />
-              Bank
-            </span>
-            <p className="mt-14 text-sm italic text-muted-foreground">
-              trading fees in from both sides — the net flow decides the state
-            </p>
-          </div>
-        </section>
-
         {/* Toggle + animation */}
         <section className="mt-20 border border-hairline bg-paper sm:mt-28">
           <BankCanvas state={state} />
