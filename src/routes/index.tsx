@@ -138,6 +138,16 @@ function Index() {
           </div>
 
           <BankCanvas state={state} />
+
+          <div className="flex flex-col items-center pb-10">
+            <span
+              key={state}
+              className="label animate-fade-in text-lg tracking-widest uppercase"
+              style={{ color: accent }}
+            >
+              {positive ? "Expansion mode" : "Contraction mode"}
+            </span>
+          </div>
         </section>
 
         {/* State panel */}
