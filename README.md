@@ -1,14 +1,28 @@
-# Welcome to your Lovable project
+# Polarity Switcher
+
+hi gimme a website  design explaining this ina a smiple and interactive way 
+
+where you toggle a switch and it changes from positive to negative and all the info changes with it 
+
+the animation should be a simple centrl building got green particles flowing in it when positive and they tuen red and starts flowing out when negative 
+
+and the base bg color should be beige 
+
+here is the full whitepaper explaining the mechanics if you want to read
+
+https://www.standardreserve.xyz/whitepaper/
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://toggle-flow-garden.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/a214f048-2653-440d-826d-459ea3e0578a).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +34,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
