@@ -6,7 +6,7 @@ export function IssuanceRate({ state }: { state: State }) {
 
   return (
     <div
-      className="pointer-events-none absolute left-4 top-1/2 w-36 -translate-y-1/2 sm:left-12 sm:w-44"
+      className="issuance-rate pointer-events-none absolute left-4 top-1/2 w-36 -translate-y-1/2 sm:left-12 sm:w-44"
       aria-hidden="true"
     >
       <span className="label text-[10px] text-muted-foreground">
@@ -110,7 +110,7 @@ export function IssuanceRate({ state }: { state: State }) {
           100% { stroke-dashoffset: 0; opacity: 0; }
         }
         @media (prefers-reduced-motion: reduce) {
-          .issuance-still * { animation: none !important; }
+          .issuance-rate * { animation: none !important; }
         }
       `}</style>
     </div>
