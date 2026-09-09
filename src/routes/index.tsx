@@ -137,13 +137,12 @@ function Index() {
             </p>
           </div>
 
-          <BankCanvas state={state} />
-
-          <div className="flex flex-col items-center pb-10">
+          <div className="relative">
+            <BankCanvas state={state} />
             <span
               key={state}
-              className="label animate-fade-in text-lg tracking-widest uppercase"
-              style={{ color: accent }}
+              className="label animate-fade-in absolute left-1/2 -translate-x-1/2 text-sm tracking-widest uppercase"
+              style={{ top: "calc(50% + 70px)", color: accent }}
             >
               {positive ? "Expansion mode" : "Contraction mode"}
             </span>
