@@ -100,9 +100,7 @@ function Index() {
 
         {/* Toggle + animation */}
         <section className="mt-20 border border-hairline bg-paper sm:mt-28">
-          <BankCanvas state={state} />
-
-          <div className="flex flex-col items-center gap-4 border-t border-hairline px-6 py-8">
+          <div className="flex flex-col items-center gap-4 border-b border-hairline px-6 py-8">
             <span className="label text-muted-foreground">Net capital flow</span>
             <button
               type="button"
@@ -138,6 +136,8 @@ function Index() {
                 : "Capital is flowing out of the bank."}
             </p>
           </div>
+
+          <BankCanvas state={state} />
         </section>
 
         {/* State panel */}
